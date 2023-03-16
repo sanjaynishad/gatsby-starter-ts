@@ -1,15 +1,16 @@
 import { AppHtmlHead } from '@/components/AppHtmlHead';
-import Title from '@/components/Title';
+import { About } from '@/components/home/About';
+import { PageHeader } from '@/components/PageHeader';
 
 export function Head() {
   return <AppHtmlHead title="About"></AppHtmlHead>;
 }
 
-export default function Home() {
+export default function AboutPage() {
   return (
-    <main>
-      <Title>About</Title>
-      <p>A TypeScript starter for Gatsby. Great for advanced users.</p>
-    </main>
+    <>
+      <PageHeader title="About Us" />
+      <About />
+    </>
   );
 }
